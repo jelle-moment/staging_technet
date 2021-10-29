@@ -5,8 +5,7 @@
 		<section>
 			
 <div class="homepageCarousel">
-    <?php // add_revslider('cube-animation1'); ?>
-	<?php add_revslider('slider-2'); ?>
+	<?php add_revslider('tne001-header-1'); ?>
 </div>
 		
 		<!-- PRODUCT CATEGORIEËN -->
