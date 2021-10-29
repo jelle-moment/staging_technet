@@ -1,0 +1,197 @@
+
+
+#contact_header_image {
+  background-image: url('../../assets/images/HeaderAfbeelding-Lijnen-03.png');
+  #contact_titel {
+    @include respond-to('medium') {
+      width: 75%;
+    }
+    @include respond-to('large') {
+      padding-top: 35vh;
+      width: 53%;
+    }
+    @include respond-to('xlarge') {
+      padding-top: 45vh;
+    }
+    h2 {
+      padding: 1rem 2rem;
+      @include respond-to('medium') {
+        font-size: 2rem;
+        padding: 1rem 1rem 1rem 17%;
+      }
+      @include respond-to('large') {
+        font-size: 2.5rem;
+        padding-left: 18%;
+      }
+      @include respond-to('xlarge') {
+        font-size: 3rem;
+      }
+      @include respond-to('xxlarge') {
+        padding: 2rem 1rem 2rem 33%;
+      }
+    }
+  }//product_titel
+}
+.widthContainer {
+  width: 70%;
+  @include respond-to('xlarge') {
+    width: 65%;
+  }
+  @include respond-to('xxlarge') {
+    width: 50%;
+  }
+
+  #contact_tekst {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include respond-to('medium') {
+      flex-direction: row;
+      width: 100%;
+    }
+
+    p {
+      width: 100%;
+      margin-bottom: 2rem;
+      @include respond-to('medium') {
+        column-count: 1;
+        width: 45%;
+      }
+    }
+    ul {
+      width: 45%;
+      @include respond-to('medium') {
+        width: 25%;
+      }
+
+      li {
+        margin-bottom: 1rem;
+        color: $lichtergrijs;
+      }
+      li:first-of-type {
+        color: $groen;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      li:nth-of-type(5){
+        color: deepskyblue;
+      }
+      li:last-of-type {
+        color: $groen;
+      }
+    }//ul
+  }//contact_tekst
+}
+
+
+#contact_container {
+  background-image: linear-gradient($antra, $zwart);
+  margin-bottom: 0;
+  border-radius: 0;
+  @include respond-to('medium') {
+    width: 100%;
+    max-width: 100%;
+  }
+  @include respond-to('medium') {
+    width: 100%;
+  }
+  .widthContainer {
+    @include respond-to('medium') {
+      width: 70%;
+    }
+    @include respond-to('xxlarge') {
+      width: 50%;
+    }
+    h2 {
+      color: white;
+      font-weight: 400;
+      line-height: 1.75rem;
+      padding: 2rem 0;
+      @include respond-to('medium') {
+        font-size: 2rem;
+        line-height: 2.2rem;
+        text-align: left;
+      }
+      strong {
+        color: $groen;
+      }
+    }//h2
+    p {
+      color: $lichtergrijs;
+      line-height: 1.25rem;
+      margin-bottom: 2rem;
+      strong {
+        color: deepskyblue;
+      }
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      @include respond-to('medium') {
+        width: 100%;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        @include respond-to('medium') {
+          flex-direction: row;
+          justify-content: space-between;
+        }
+        label {
+          color: $lichtgrijs;
+          font-weight: bold;
+          margin-bottom: 0.25rem;
+          @include respond-to('medium') {
+            display: block;
+            width: 25%;
+            margin-right: 1rem;
+            padding-top: 0.5rem;
+          }
+        }
+        input {
+          margin-bottom: 1rem;
+          padding: 0.5rem 0.5rem;
+          background-color: $lichtgrijs;
+          color: $antra;
+          @include respond-to('medium') {
+            display: block;
+            width: 70%;
+          }
+        }
+        input:focus {
+          border: 1px solid $groen;
+        }
+        textarea {
+          margin-bottom: 1rem;
+          background-color: $lichtgrijs;
+          padding: 0.5rem 0.5rem;
+          @include respond-to('medium') {
+            display: block;
+            width: 70%;
+          }
+        }
+        ::placeholder {
+          color: $antra;
+        }
+      } //div
+
+      div:last-of-type {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        input {
+          color: $antra;
+          font-weight: bold;
+          border: 0;
+          border-radius: 10px 10px;
+          background-color: $groen;
+          padding: 1rem 3rem;
+          width: 150px;
+          margin-bottom: 5rem;
+        }
+      }
+    }
+
+  }//widthContainer
+}//contact_container

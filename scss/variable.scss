@@ -1,0 +1,63 @@
+$breakpoints: (
+  'small'			:  	576px,
+  'medium'		: 	768px,
+  'large'			:  	992px,
+	'xlarge'		:   1200px,
+	'xxlarge'	:		1920px
+) !default;
+
+@mixin respond-to($breakpoint) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Prints a media query based on the value
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+}
+
+
+
+// zo include je een Breakpoint ================================================
+
+// @include respond-to('xxxlarge') {
+//   ===========================
+// }
+
+// custom kleurenpallet ========================================================
+$zwart          : #272523;
+$antra          : #474442;
+$grijs          : #707070;
+$lichtgrijs     : #bcbcbc;
+$lichtergrijs   : #dddddd;
+$groen          : #B6CA00;
+
+$backgroundImg: imgCont, imgCont1, imgCont2, imgCont3, imgCont4, imgCont5, imgCont6, imgCont7, imgCont8;
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+}
+
+p,a,q,ul,li,span,strong, small, form, label, input, textarea {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: $antra;
+}
+
+.widthContainer {
+  width: 80%;
+  margin: auto;
+  // overflow: hidden;
+}
+
+// tekst afkappen categorieën blokken
+.afkappen {
+  width: 92.5%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}

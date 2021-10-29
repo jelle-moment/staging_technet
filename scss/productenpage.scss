@@ -1,0 +1,249 @@
+#bodyProductenPage{ background-image: none; }
+
+
+#categorie_header_image {
+  background-image: url('../../assets/images/HeaderAfbeelding-Lijnen-12.png');
+  #categorie_titel {
+    @include respond-to('medium') {
+      width: 75%;
+    }
+    @include respond-to('large') {
+      padding-top: 35vh;
+      width: 60%;
+    }
+    @include respond-to('xlarge') {
+      padding-top: 45vh;
+    }
+    h2 {
+      padding: 1rem 2rem;
+      padding-left: 18%;
+      @include respond-to('medium') {
+        font-size: 2rem;
+        padding: 1rem 1rem 1rem 15%;
+      }
+      @include respond-to('large') {
+        font-size: 2.5rem;
+        padding-left: 18%;
+      }
+      @include respond-to('xlarge') {
+        font-size: 3rem;
+      }
+      @include respond-to('xxlarge') {
+        padding: 2rem 1rem 2rem 34%;
+      }
+    }
+  }//product_titel
+}
+.widthContainer_breedte {
+  .widthContainer {
+    @include respond-to('medium') {
+      width: 80%;
+    }
+    @include respond-to('xlarge') {
+      width: 80%;
+    }
+    @include respond-to('xxlarge') {
+      width: 60%;
+    }
+    .categorieBeschrijving {
+      margin: 4rem 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      @include respond-to('medium') {
+        flex-direction: row;
+      }
+      .column-left{
+        width: 100%;
+        @include respond-to('medium') {
+          width: 40%;
+        }
+      }
+      .column-right{
+        width: 100%;
+        @include respond-to('medium') {
+          width: 40%;
+        }
+      }
+      p {
+        color: $lichtgrijs;
+        line-height: 1.25rem;
+        margin-bottom: 1rem;
+        // @include respond-to('medium') {
+        //   max-width: 50%;
+        // }
+      }
+      ul {
+        line-height: 1.3rem;
+        color: $lichtgrijs;
+        list-style: disc;
+        list-style-position: outside;
+        margin: 0 0 0.5rem 1.25rem;
+      }
+      h2 {
+        color: white;
+        text-align: left;
+        margin-bottom: 1rem;
+        font-weight: 800;
+        @include respond-to('medium') {
+          font-size: 1.75rem;
+        }
+        @include respond-to('large') {
+          font-size: 2rem;
+        }
+      } // h2
+      h3 {
+        color: $groen;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.25rem;
+        line-height: 1.4rem;
+        background-color: transparent;
+        padding: 0;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+
+
+#productenblok {
+  margin-top: 2rem;
+  border-radius: 0;
+  background-image: url('../../assets/images/Lijnen75.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(39,37,35,1);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(39,37,35,1);
+  box-shadow: 0px 0px 15px 0px rgba(39,37,35,1);
+
+  @include respond-to('medium') {
+    width: 100%;
+  }
+  @include respond-to('xlarge') {
+    width: 100%;
+  }
+  @include respond-to('xxlarge') {
+    max-width: 100%;
+  }
+
+  .widthContainer {
+    @include respond-to('medium') {
+      width: 80%;
+    }
+    @include respond-to('xlarge') {
+      width: 80%;
+    }
+    @include respond-to('xxlarge') {
+      width: 60%;
+    }
+    article {
+      border: 2px solid white;
+
+      h3 {
+        min-height: 65px;
+        box-sizing: border-box;
+      }
+
+      a {
+        color: $lichtergrijs;
+        background-color: $zwart;
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(39,37,35,1);
+        -moz-box-shadow: 0px 0px 5px 0px rgba(39,37,35,1);
+        box-shadow: 0px 0px 5px 0px rgba(39,37,35,1);
+        transition: 0.3s;
+      }
+      a:hover, a:active {
+        color: $lichtergrijs;
+        background-color: rgba(39,37,35,0.75);
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(39,37,35,1);
+        -moz-box-shadow: 0px 0px 5px 0px rgba(39,37,35,1);
+        box-shadow: 0px 0px 5px 0px rgba(39,37,35,1);
+      }
+      .imgCont1 {
+        background-image: url("../../assets/images/producten/132ba200903.jpg");
+      }
+
+      .imgCont2 {
+        background-image: url("../../assets/images/producten/724d8f7290.jpg");
+      }
+
+      .imgCont3 {
+        background-image: url("../../assets/images/producten/2926f20a26b.jpg");
+      }
+
+      .imgCont4 {
+        background-image: url("../../assets/images/producten/3307cf05523.png");
+      }
+
+      .imgCont5 {
+        background-image: url("../../assets/images/producten/3698afd696.jpg");
+      }
+
+      .imgCont6 {
+        background-image: url("../../assets/images/producten/5307084c0ce.jpg");
+      }
+
+      .imgCont7 {
+        background-image: url("../../assets/images/producten/product1.png");
+      }
+
+      .imgCont8 {
+        background-image: url("../../assets/images/producten/tcm-compression-soap-dispenser.png");
+      }
+      // ======= Afbeeldingen verschillende producten plaatsen door loopje =========
+      @each $background in $backgroundImg {
+        & .#{$background} {
+          width: 100%;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          border-radius: 22px 22px 0 0;
+
+          &:after {
+            content: "";
+            display: block;
+            padding-top: 65%;
+          }
+        }
+      }
+    } //article
+
+    .pagination {
+      display: flex;
+      flex-direction: row;
+      width: 80%;
+      margin: 0 auto;
+      justify-content: center;
+      span, a {
+        display: inline-block;
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+        text-align: center;
+        background-color: $antra;
+        border-radius: 200px;
+        margin: 0 0.25rem;
+        color: $lichtgrijs;
+        font-weight: 800;
+        cursor: pointer;
+        transition: 0.5s;
+
+        -webkit-box-shadow: 0px 0px 3px 0px rgba(39,37,35,1);
+        -moz-box-shadow: 0px 0px 3px 0px rgba(39,37,35,1);
+        box-shadow: 0px 0px 3px 0px rgba(39,37,35,1);
+      }
+      span:hover, span:active, span:focus {
+        background-color: $zwart;
+      }
+      a:hover, a:active, a:focus {
+        background-color: $zwart;
+      }
+    } // pagination
+
+  }//widthContainer
+
+}//productenblok

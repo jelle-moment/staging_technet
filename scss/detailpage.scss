@@ -1,0 +1,782 @@
+#product_header_image {
+  background-image: url('../../assets/images/asmlheader.jpg');
+  #product_titel {
+    @include respond-to('medium') {
+      width: 75%;
+    }
+    @include respond-to('large') {
+      padding-top: 30vh;
+      width: 60%;
+    }
+    h1 {
+      color: white;
+      background-color: $groen;
+      padding: 5% 0 5% 10%;
+      text-transform: uppercase;
+      @include respond-to('medium') {
+        font-size: 2rem;
+        padding: 1rem 1rem 1rem 15%;
+      }
+      @include respond-to('large') {
+        font-size: 2.5rem;
+        border-radius: 0 15px 15px 0;
+        padding-left: 20%;
+      }
+      @include respond-to('xlarge') {
+        border-radius: 0 25px 0 0;
+        font-size: 3rem;
+      }
+      @include respond-to('xxlarge') {
+        padding: 2rem 1rem 2rem 33%;
+      }
+    }
+    ul {
+      display: none;
+      @include respond-to('xlarge') {
+        display: flex;
+      }
+      background-color: $antra;
+      border-radius: 0 0 25px 0;
+      padding-left: 20%;
+      @include respond-to('xxlarge') {
+        padding-left: 33%;
+      }
+      li {
+        max-width: 25%;
+        padding: 1rem 1rem;
+        h3 {
+          font-size: 1rem;
+          color: $groen;
+          margin-bottom: 0.5rem
+        }
+        p {
+          font-size: 0.9rem;
+          color: $lichtergrijs;
+          line-height: 1.25rem;
+      }
+      }
+      li:first-of-type {
+        border-right: 2px  solid $lichtgrijs;
+        border-left: 2px  solid $lichtgrijs;
+      }
+      li:nth-child(2) {
+        border-right: 2px  solid $lichtgrijs;
+      }
+    }
+  }//product_titel
+}
+
+.positie_rechts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+
+#detailpage_productbeschrijving {
+  background-image: linear-gradient($antra, $zwart);
+  @include respond-to('large') {
+    margin: -30px 0 2rem 10%;
+    width: 50%;
+  }
+  @include respond-to('xxlarge') {
+    margin: -30px 0 2rem 20%;
+    width: 40%;
+  }
+
+  .widthContainer {
+    display: block;
+    h2 {
+      color: white;
+      text-align: left;
+      padding-top: 0;
+      font-weight: 400;
+      @include respond-to('medium') {
+        font-size: 1.75rem;
+      }
+      @include respond-to('large') {
+        font-size: 2rem;
+      }
+    } // h2
+    article {
+      background-color: transparent;
+      border-radius: 0;
+      width: 100%;
+      display: block;
+      padding-top: 2rem;
+
+      //schaduw uitzetten
+      -webkit-box-shadow: 0px 0px 15px 0px rgba(39,37,35,0);
+      -moz-box-shadow: 0px 0px 15px 0px rgba(39,37,35,0);
+      box-shadow: 0px 0px 15px 0px rgba(39,37,35,0);
+      //schaduw uitzetten
+
+      .beschrijvingHide {
+        display: none;
+        @include respond-to('medium') {
+          display: block;
+        }
+      }
+      // youtube video's plaatsen
+
+      .wp-block-embed__wrapper {
+        iframe {
+          margin: 1rem 0;
+        }
+      }
+
+      // ========================
+      #LeesMeerButton {
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(39,37,35,1);
+        -moz-box-shadow: 0px 0px 5px 0px rgba(39,37,35,1);
+        box-shadow: 0px 0px 5px 0px rgba(39,37,35,1);
+        color: $antra;
+        font-weight: bold;
+        border-radius: 10px 10px;
+        background-color: $lichtergrijs;
+        padding: 1rem 3rem;
+        margin-bottom: 1rem;
+        margin-left: 0;
+        display: inline-block;
+        @include respond-to('medium') {
+          display: none;
+        }
+      }
+      strong {
+        font-weight: 800;
+      }
+
+      h3 {
+        color: $groen;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.25rem;
+        background-color: transparent;
+        padding: 0;
+        text-decoration: none;
+      }
+      a {
+        h3 {
+          text-decoration: underline;
+        }
+      }
+
+      p {
+        padding: 0;
+        margin-bottom: 2rem;
+      }
+      .bulletsTitel {
+        margin-bottom: 1rem;
+      }
+      ul {
+        margin-bottom: 2rem;
+        li {
+          line-height: 1.1rem;
+          color: $lichtgrijs;
+          list-style: disc;
+          list-style-position: outside;
+          margin: 0 0 0.5rem 1.25rem;
+        }
+      }
+      ul:last-child {
+        background-color: inherit !important;
+      }
+
+      q {
+        font-size: 2rem;
+        font-weight: 300;
+        line-height: 2.25rem;
+        color: $lichtergrijs;
+        margin-bottom: 2rem;
+      }
+      q::before {
+        content: open-quote;
+      }
+      q::after {
+        content: close-quote;
+      }
+      figure {
+        img{
+          width: 100%;
+          height: auto;
+        }
+      }
+      #product_img_1 {
+        background-image: url('../../assets/images/producten/Netzsch_HFM_446_Lambda_Principle_of_Operation.png');
+      }
+      #product_img_2 {
+        background-image: url('../../assets/images/producten/tcm-lipstick-1-1.jpg');
+      }
+      .product_img_container {
+        background-size: 100% auto;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-color: $zwart;
+        border-radius: 15px;
+        margin-bottom: 2rem;
+        // height: 300px;
+        // min-height: 300px;
+        // @include respond-to('xlarge') {
+        //   min-height: 400px;
+        // }
+        // @include respond-to('xxlarge') {
+        //   min-height: 500px;
+        // }
+        .product_image_image {
+          width: 100%;
+          height: auto;
+          opacity:0;
+        }
+      }//product_img_container
+      .Afbeelding_tekst_container {
+        background-color: $zwart;
+        border-radius: 15px;
+        margin-bottom: 2rem;
+        .product_img_container {
+          margin-bottom: 1.5rem;
+        }
+        h3 {
+          color: white;
+          padding: 0 2rem;
+        }
+        p {
+          color: $lichtgrijs;
+          padding: 0 2rem 2rem 2rem;
+          margin: 0;
+        }
+      }
+      a {
+        -webkit-box-shadow: 0px 0px 0px 0px #272523;
+        -moz-box-shadow: 0px 0px 0px 0px #272523;
+        box-shadow: 0px 0px 0px 0px #272523;
+        color: inherit;
+        background-color: inherit;
+        font-weight: inherit;
+        text-decoration: underline;
+        border-radius:0;
+        padding: 0;
+        margin-left:0;
+        margin-bottom: 0;
+        display: inline;
+        transition: 0.1s;
+      }
+      a:hover, a:active {
+        color: $lichtgrijs;
+        text-decoration: none;
+      }
+    } // article
+
+    // css voor contact formulieren ======================
+
+    div {
+      width: 100%;
+      form {
+        display: flex;
+        flex-direction: column;
+
+        p {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 0;
+
+          label {
+            color: $lichtgrijs;
+            font-weight: bold;
+            width: 100%;
+            @include respond-to('large') {
+              width: 80%;
+            }
+          }//label
+          span {
+            input {
+              margin: 0.5rem 0 1rem 0;
+              padding: 0.5rem 0.5rem;
+              background-color: $lichtgrijs;
+              color: $zwart;
+              width: 100%;
+              @include respond-to('large') {
+                width: 80%;
+              }
+            }
+            input:focus {
+              outline: none;
+              -webkit-box-shadow: 0px 0px 2px 0px rgba(182,202,0,1);
+              -moz-box-shadow: 0px 0px 2px 0px rgba(182,202,0,1);
+              box-shadow: 0px 0px 2px 0px rgba(182,202,0,1);
+            }
+            textarea {
+              color: $zwart;
+              margin: 0.5rem 0 2rem 0;
+              background-color: $lichtgrijs;
+              padding: 0.5rem 0.5rem;
+              width: 100%;
+              @include respond-to('large') {
+                width: 80%;
+              }
+            }
+            textarea:focus {
+              outline: none;
+              -webkit-box-shadow: 0px 0px 2px 0px rgba(182,202,0,1);
+              -moz-box-shadow: 0px 0px 2px 0px rgba(182,202,0,1);
+              box-shadow: 0px 0px 2px 0px rgba(182,202,0,1);
+            }
+            select {
+              margin: 0.5rem 0 1rem 0;
+              padding: 0.5rem 0.5rem;
+              background-color: $lichtgrijs;
+              color: $zwart;
+              width: 100%;
+              @include respond-to('large') {
+                width: 82%;
+              }
+            }
+            select:focus {
+              outline: none;
+              -webkit-box-shadow: 0px 0px 2px 0px rgba(182,202,0,1);
+              -moz-box-shadow: 0px 0px 2px 0px rgba(182,202,0,1);
+              box-shadow: 0px 0px 2px 0px rgba(182,202,0,1);
+            }
+            ::placeholder {
+              color: $antra;
+            }
+            .wpcf7-not-valid-tip {
+              color: red;
+              margin-bottom: 2rem;
+            } // ERROR MESSAGE
+          }//span
+        } //p
+
+        p:last-of-type {
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+          input {
+            color: $antra;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            border: 0;
+            border-radius: 10px 10px;
+            background-color: $groen;
+            width: 150px;
+            height: 50px;
+            cursor: pointer;
+            transition: 0.3s;
+            -webkit-box-shadow: 0px 0px 5px 0px rgba(39,37,35,1);
+            -moz-box-shadow: 0px 0px 5px 0px rgba(39,37,35,1);
+            box-shadow: 0px 0px 5px 0px rgba(39,37,35,1);
+          }
+          input:hover, input:focus, input:active  {
+            color: $zwart;
+            -webkit-box-shadow: 0px 0px 6px 0px rgba(00,00,00,1);
+            -moz-box-shadow: 0px 0px 6px 0px rgba(00,00,00,1);
+            box-shadow: 0px 0px 6px 0px rgba(00,00,00,1);
+            outline: none;
+          }
+        }//div:last-of-type
+        .formtext {
+          p {
+            width: 100%;
+            margin-bottom: 1rem;
+            @include respond-to('large') {
+              width: 52%;
+            }
+          }
+        }
+
+        .wpcf7-response-output {
+          color: red;
+          border-color: rgba(00,00,00,0.0);
+          margin: 2rem 0 0 0;
+          padding: 0 0;
+        } // ERROR MESSAGE FORM
+      } //form
+    } //div (container geproduceert door wordpress)
+    .pagination {
+      color: $lichtergrijs;
+      span {
+        margin-right: 1rem;
+      }
+      a {
+        text-decoration: none;
+        margin-right: 1rem;
+      }
+    }
+  } // widthContainer
+}//detailpage_productbeschrijving
+
+  .naar_rechts {
+    width: 100%;
+    @include respond-to('large') {
+      width: 36%;
+      margin-left: 2rem;
+      overflow-x: hidden;
+    }
+    .artikel_buttons {
+      padding: 2rem;
+      width: 50%;
+      margin: 0 auto 2rem auto;
+      border: 2px solid $groen;
+      border-radius: 25px;
+      display: flex;
+      flex-direction: column;       //============================================
+      @include respond-to('large') {
+        margin: 2rem 0 0 0 ;
+        width: 100%;
+        padding-right: 0;
+        border-radius: 15px 0 0 15px;
+      }
+      @include respond-to('xxlarge') {
+        width: 44%;
+        border-radius: 15px;
+        padding: 2rem 0;
+      }
+      a {
+        color: $lichtergrijs;
+        line-height: 1.3rem;
+        font-weight: bold;
+        border-radius: 10px 10px;
+        background-color: $zwart;
+        padding: 1rem 3rem;
+        margin: 1rem auto 0 auto;
+        align-self: flex-start;
+        width: 90px;
+        text-align: center;
+        transition: 0.3s;
+        @include respond-to('large') {
+          margin: 1rem 0 0 0;
+        }
+        @include respond-to('xxlarge') {
+          margin: 1rem auto;
+        }
+      }
+      a:hover, a:active {
+        color: $lichtergrijs;
+        background-color: rgba(39,37,35,0.75);
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(39,37,35,1);
+        -moz-box-shadow: 0px 0px 5px 0px rgba(39,37,35,1);
+        box-shadow: 0px 0px 5px 0px rgba(39,37,35,1);
+      }
+      a:first-of-type {
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(39,37,35,1);
+        -moz-box-shadow: 0px 0px 5px 0px rgba(39,37,35,1);
+        box-shadow: 0px 0px 5px 0px rgba(39,37,35,1);
+        margin-top: 0;
+        background-color: white;
+        color: $zwart;
+        @include respond-to('xxlarge') {
+          margin-top: 1rem;
+        }
+      }
+      a:first-of-type:hover {
+        color: $antra;
+        background-color: $lichtergrijs;
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(39,37,35,1);
+        -moz-box-shadow: 0px 0px 5px 0px rgba(39,37,35,1);
+        box-shadow: 0px 0px 5px 0px rgba(39,37,35,1);
+      }
+    }//artikel_buttons
+
+    .actie_kader:hover {
+      border-radius: 45px 0 0 45px;
+      transition: 0.3s;
+    }
+    .actie_kader {
+      padding: 1rem 2rem;
+      margin: 2rem 0 2rem 0;
+      background-color: $groen;
+      border-radius: 25px 0 0 25px;
+      transition: 0.3s;
+
+      div {
+        width: 100%;
+        form {
+          display: flex;
+          flex-direction: column;
+
+          p {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 0;
+
+            label {
+              color: $lichtgrijs;
+              font-weight: bold;
+              width: 100%;
+              @include respond-to('large') {
+                width: 50%;
+              }
+            }//label
+            span {
+              input {
+                margin: 0.5rem 0 1rem 0;
+                padding: 0.5rem 0.5rem;
+                background-color: $lichtgrijs;
+                color: $zwart;
+                width: 100%;
+                @include respond-to('large') {
+                  width: 50%;
+                }
+              }
+              input:focus {
+                outline: none;
+                -webkit-box-shadow: 0px 0px 2px 0px rgba(182,202,0,1);
+                -moz-box-shadow: 0px 0px 2px 0px rgba(182,202,0,1);
+                box-shadow: 0px 0px 2px 0px rgba(182,202,0,1);
+              }
+              textarea {
+                color: $zwart;
+                margin: 0.5rem 0 2rem 0;
+                background-color: $lichtgrijs;
+                padding: 0.5rem 0.5rem;
+                width: 100%;
+                @include respond-to('large') {
+                  width: 50%;
+                }
+              }
+              textarea:focus {
+                outline: none;
+                -webkit-box-shadow: 0px 0px 2px 0px rgba(182,202,0,1);
+                -moz-box-shadow: 0px 0px 2px 0px rgba(182,202,0,1);
+                box-shadow: 0px 0px 2px 0px rgba(182,202,0,1);
+              }
+              select {
+                margin: 0.5rem 0 1rem 0;
+                padding: 0.5rem 0.5rem;
+                background-color: $lichtgrijs;
+                color: $zwart;
+                width: 100%;
+                @include respond-to('large') {
+                  width: 52%;
+                }
+              }
+              select:focus {
+                outline: none;
+                -webkit-box-shadow: 0px 0px 2px 0px rgba(182,202,0,1);
+                -moz-box-shadow: 0px 0px 2px 0px rgba(182,202,0,1);
+                box-shadow: 0px 0px 2px 0px rgba(182,202,0,1);
+              }
+              ::placeholder {
+                color: $antra;
+              }
+              .wpcf7-not-valid-tip {
+                color: red;
+                margin-bottom: 2rem;
+              } // ERROR MESSAGE
+            }//span
+          } //p
+
+          p:last-of-type {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            input {
+              color: $antra;
+              font-weight: bold;
+              text-transform: uppercase;
+              text-align: center;
+              border: 0;
+              border-radius: 10px 10px;
+              background-color: $groen;
+              width: 150px;
+              height: 50px;
+              cursor: pointer;
+              transition: 0.3s;
+              -webkit-box-shadow: 0px 0px 5px 0px rgba(39,37,35,1);
+              -moz-box-shadow: 0px 0px 5px 0px rgba(39,37,35,1);
+              box-shadow: 0px 0px 5px 0px rgba(39,37,35,1);
+            }
+            input:hover, input:focus, input:active  {
+              color: $zwart;
+              -webkit-box-shadow: 0px 0px 6px 0px rgba(00,00,00,1);
+              -moz-box-shadow: 0px 0px 6px 0px rgba(00,00,00,1);
+              box-shadow: 0px 0px 6px 0px rgba(00,00,00,1);
+              outline: none;
+            }
+          }//div:last-of-type
+          .formtext {
+            p {
+              width: 100%;
+              margin-bottom: 1rem;
+              @include respond-to('large') {
+                width: 52%;
+              }
+            }
+          }
+
+          .wpcf7-response-output {
+            color: red;
+            border-color: rgba(00,00,00,0.0);
+            margin: 2rem 0 0 0;
+            padding: 0 0;
+          } // ERROR MESSAGE FORM
+        } //form
+      } //div (container geproduceert door wordpress)
+
+      img {
+        margin: 1rem 2rem 0 0;
+        border-radius: 25px 25px 0 0 ;
+      }
+      h2 {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        color:$zwart;
+        font-weight: bold;
+        margin: 1rem 2rem 1rem 0;
+        @include respond-to('large') {
+          font-size: 1.25rem;
+        }
+      }
+      p {
+        color:$antra;
+        line-height: 1.25rem;
+        margin-bottom: 2rem;
+        margin-right: 2rem;
+      }
+      a {
+        display: block;
+        color: $lichtergrijs;
+        line-height: 1.3rem;
+        font-weight: bold;
+        border-radius: 10px 10px;
+        background-color: $zwart;
+        padding: 1rem 3rem;
+        margin: 1rem auto 1rem auto;
+        width: 90px;
+        text-align: center;
+        transition: 0.3s;
+        @include respond-to('large') {
+          margin: 1rem 0 1rem 0;
+        }
+        @include respond-to('xxlarge') {
+          margin: 2rem auto;
+        }
+      }
+      a:hover, a:active {
+        color: $groen;
+        background-color: rgba(39,37,35,0.75);
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(39,37,35,1);
+        -moz-box-shadow: 0px 0px 5px 0px rgba(39,37,35,1);
+        box-shadow: 0px 0px 5px 0px rgba(39,37,35,1);
+      }
+    }//actie_kader
+
+    .product_partner_container {
+      padding: 1rem 2rem;
+      margin-bottom: 2rem;
+
+      @include respond-to('medium') {
+        padding: 1rem 3rem 1rem 15%;
+      }                             //============================================
+      @include respond-to('large') {
+        margin: 3rem 0 3rem 1.9rem;
+        padding: 0;
+        width: 100%;
+      }
+      h2 {
+        color: white;
+        margin-bottom: 0.5rem;
+      }
+      img {
+        max-width: 250px;
+        width: auto;
+          @include respond-to('large') {
+            max-width: 200px;
+          }
+          @include respond-to('xxlarge') {
+            max-width: 250px;
+          }
+      }
+    }// product_partner_container
+
+    .product_specificaties {
+
+      margin-top: 3rem;
+      margin-bottom: 2rem;
+      @include respond-to('medium') {
+        width: 85%;
+        margin: 2rem auto;
+      }                             //============================================
+      @include respond-to('large') {
+        margin: 0;
+        margin-top: 3rem;
+        width: 100%;
+        border-radius: 15px 0 0 15px;
+      }
+      @include respond-to('xxlarge') {
+        width: 44%;
+        border-radius: 15px;
+      }
+      ul {
+        width: 100%;
+        background-color: $zwart !important;
+        border-radius: 25px;
+        @include respond-to('large') {
+          border-radius: 15px 0 0 15px;
+        }
+        @include respond-to('xxlarge') {
+          border-radius: 15px;
+        }
+        li {
+          width: 100%;
+          border-top: 1px  solid $lichtgrijs;
+          border-bottom: 1px  solid $lichtgrijs;
+
+          h2 {
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            color: white;
+            padding: 1rem 2rem;
+            @include respond-to('large') {
+              font-size: 1.25rem;
+            }
+          }
+          h3 {
+            font-size: 1.25rem;
+            color: $groen;
+            padding: 1.5rem 2rem 0 2rem;
+            display: block;
+          }
+          p {
+            font-size: 0.9rem;
+            color: $lichtergrijs;
+            line-height: 1.25rem;
+            padding: 0.25rem 2rem 1.5rem 2rem;
+            @include respond-to('large') {
+              width: 75%;
+            }
+            @include respond-to('xxlarge') {
+              width: 80%;
+            }
+          }
+        }
+        li:first-of-type {
+          border-top: 0  solid $lichtgrijs;
+        }
+        li:last-of-type {
+          border-bottom: 0  solid $lichtgrijs;
+        }
+      }//ul
+    } //product_specificaties
+  } // naar_rechts
+
+
+  iframe {
+    margin-bottom: 2rem;
+    width: 100%;
+    @include respond-to('medium') {
+      width: 85%;
+      margin: 0 auto 2rem auto;
+      display: block;
+      height: 400px;
+    }
+    @include respond-to('large') {
+      margin: 2rem 40% 2rem 10%;
+      height: 400px;
+    }
+    @include respond-to('xxlarge') {
+      margin: 2rem 40% 2rem 20%;
+      height: 450px;
+    }
+  }
+}//positie_rechts

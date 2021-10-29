@@ -1,0 +1,288 @@
+
+
+#contact_header_image {
+  background-image: url('../../assets/images/HeaderAfbeelding-Lijnen-03.png');
+  #contact_titel {
+    @include respond-to('medium') {
+      width: 75%;
+    }
+    @include respond-to('large') {
+      padding-top: 35vh;
+      width: 53%;
+    }
+    @include respond-to('xlarge') {
+      padding-top: 45vh;
+    }
+    h2 {
+      padding: 1rem 3rem;
+      @include respond-to('medium') {
+        font-size: 2rem;
+        padding: 1rem 1rem 1rem 14%;
+      }
+      @include respond-to('large') {
+        font-size: 2.5rem;
+        padding-left: 18%;
+      }
+      @include respond-to('xlarge') {
+        font-size: 3rem;
+      }
+      @include respond-to('xxlarge') {
+        padding: 2rem 1rem 2rem 37%;
+      }
+    }
+  }//product_titel
+}
+.widthContainer {
+  @include respond-to('medium') {
+    width: 80%;
+  }
+  @include respond-to('xlarge') {
+    width: 80%;
+  }
+  @include respond-to('xxlarge') {
+    width: 60%;
+  }
+
+  #contact_tekst {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 4rem 0 5rem 0;
+    @include respond-to('medium') {
+      flex-direction: row;
+      width: 100%;
+    }
+    div {
+      width: 70%;
+
+      h2 {
+        font-size: 2rem;
+        color: $groen;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        @include respond-to('large') {
+          font-size: 2rem;
+          width: 85%;
+        }
+      }
+      h3 {
+        font-size: 1.5rem;
+        color: white;
+        margin-bottom: 1rem;
+        @include respond-to('large') {
+          font-size: 1.25rem;
+          width: 85%;
+        }
+      }
+      p {
+        width: 100%;
+        margin-bottom: 2rem;
+        color: $lichtgrijs;
+        line-height: 1.1rem;
+        @include respond-to('medium') {
+          column-count: 1;
+          width: 85%;
+        }
+      }
+    }
+
+    ul {
+      width: 100%;
+      @include respond-to('medium') {
+        width: 25%;
+      }
+
+      li {
+        margin-bottom: 1rem;
+        color: $lichtergrijs;
+      }
+      li:first-of-type {
+        color: $groen;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      li:nth-of-type(5){
+        color: deepskyblue;
+      }
+      li:last-of-type {
+        color: $groen;
+      }
+    }//ul
+  }//contact_tekst
+}
+
+
+#contact_container {
+  background-image: linear-gradient($antra, $zwart);
+  margin-bottom: 0;
+  border-radius: 0;
+  padding-bottom: 5rem;
+  overflow: hidden;
+  @include respond-to('medium') {
+    width: 100%;
+    max-width: 100%;
+  }
+  @include respond-to('medium') {
+    width: 100%;
+  }
+  .widthContainer {
+    @include respond-to('medium') {
+      width: 80%;
+    }
+    @include respond-to('xlarge') {
+      width: 80%;
+    }
+    @include respond-to('xxlarge') {
+      width: 60%;
+    }
+    h2 {
+      color: white;
+      font-weight: 400;
+      line-height: 1.75rem;
+      padding: 2rem 0;
+      text-align: left;
+      @include respond-to('medium') {
+        font-size: 2rem;
+        line-height: 2.2rem;
+      }
+      strong {
+        color: $groen;
+      }
+    }//h2
+    p {
+      color: $lichtergrijs;
+      line-height: 1.25rem;
+      margin-bottom: 2rem;
+      strong {
+        color: deepskyblue;
+      }
+    }
+    div {
+      width: 100%;
+      form {
+        display: flex;
+        flex-direction: column;
+
+        p {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 0;
+
+          label {
+            color: $lichtgrijs;
+            font-weight: bold;
+            width: 100%;
+            @include respond-to('large') {
+              width: 50%;
+            }
+          }//label
+          span {
+            input {
+              margin: 0.5rem 0 1rem 0;
+              padding: 0.5rem 0.5rem;
+              background-color: $lichtgrijs;
+              color: $zwart;
+              width: 100%;
+              @include respond-to('large') {
+                width: 50%;
+              }
+            }
+            input:focus {
+              outline: none;
+              -webkit-box-shadow: 0px 0px 2px 0px rgba(182,202,0,1);
+              -moz-box-shadow: 0px 0px 2px 0px rgba(182,202,0,1);
+              box-shadow: 0px 0px 2px 0px rgba(182,202,0,1);
+            }
+            textarea {
+              color: $zwart;
+              margin: 0.5rem 0 2rem 0;
+              background-color: $lichtgrijs;
+              padding: 0.5rem 0.5rem;
+              width: 100%;
+              @include respond-to('large') {
+                width: 50%;
+              }
+            }
+            textarea:focus {
+              outline: none;
+              -webkit-box-shadow: 0px 0px 2px 0px rgba(182,202,0,1);
+              -moz-box-shadow: 0px 0px 2px 0px rgba(182,202,0,1);
+              box-shadow: 0px 0px 2px 0px rgba(182,202,0,1);
+            }
+            select {
+              margin: 0.5rem 0 1rem 0;
+              padding: 0.5rem 0.5rem;
+              background-color: $lichtgrijs;
+              color: $zwart;
+              width: 100%;
+              @include respond-to('large') {
+                width: 52%;
+              }
+            }
+            select:focus {
+              outline: none;
+              -webkit-box-shadow: 0px 0px 2px 0px rgba(182,202,0,1);
+              -moz-box-shadow: 0px 0px 2px 0px rgba(182,202,0,1);
+              box-shadow: 0px 0px 2px 0px rgba(182,202,0,1);
+            }
+            ::placeholder {
+              color: $antra;
+            }
+            .wpcf7-not-valid-tip {
+              color: red;
+              margin-bottom: 2rem;
+            } // ERROR MESSAGE
+          }//span
+        } //p
+
+        p:last-of-type {
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+          input {
+            color: $antra;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            border: 0;
+            border-radius: 10px 10px;
+            background-color: $groen;
+            width: 150px;
+            height: 50px;
+            cursor: pointer;
+            transition: 0.3s;
+            -webkit-box-shadow: 0px 0px 5px 0px rgba(39,37,35,1);
+            -moz-box-shadow: 0px 0px 5px 0px rgba(39,37,35,1);
+            box-shadow: 0px 0px 5px 0px rgba(39,37,35,1);
+          }
+          input:hover, input:focus, input:active  {
+            color: $zwart;
+            -webkit-box-shadow: 0px 0px 6px 0px rgba(00,00,00,1);
+            -moz-box-shadow: 0px 0px 6px 0px rgba(00,00,00,1);
+            box-shadow: 0px 0px 6px 0px rgba(00,00,00,1);
+            outline: none;
+          }
+        }//div:last-of-type
+        .formtext {
+          p {
+            width: 100%;
+            margin-bottom: 1rem;
+            @include respond-to('large') {
+              width: 52%;
+            }
+          }
+        }
+
+        .wpcf7-response-output {
+          color: red;
+          border-color: rgba(00,00,00,0.0);
+          margin: 2rem 0 0 0;
+          padding: 0 0;
+        } // ERROR MESSAGE FORM
+      } //form
+    } //div (container geproduceert door wordpress)
+
+
+  }//widthContainer
+}//contact_container
