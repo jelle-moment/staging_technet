@@ -5,7 +5,7 @@
 		<section>
 			
 <div class="homepageCarousel">
-	<?php add_revslider('tne001-header-1'); ?>
+	<?php add_revslider('slider-2'); ?>
 </div>
 		
 		<!-- PRODUCT CATEGORIEËN -->
