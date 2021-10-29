@@ -326,7 +326,6 @@ body {
   -ms-flex-item-align: start;
       align-self: flex-start;
   -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
   transition: 0.3s;
 }
 .productenContainer .widthContainer article a:hover, .productenContainer .widthContainer article a:active {
@@ -425,7 +424,6 @@ body {
   margin-bottom: 1rem;
   display: inline-block;
   -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
   transition: 0.3s;
 }
 .overTechnexContainer a:hover, .overTechnexContainer a:active {
@@ -537,7 +535,6 @@ body {
   padding: 1rem 3rem;
   display: inline-block;
   -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
   transition: 0.3s;
 }
 .successtoriesContainer .widthContainer .successtoryBlok a:hover, .successtoriesContainer .widthContainer .successtoryBlok a:active {
@@ -667,7 +664,6 @@ footer .widthContainer .footerContainerLeft .footerCol a {
   line-height: 2rem;
   color: #dddddd;
   -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
 }
@@ -731,7 +727,6 @@ footer .widthContainer .footerContainerRight ul li a svg {
   margin-right: 1rem;
   fill: #dddddd;
   -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
   transition: 0.3s;
 }
 footer .widthContainer .footerContainerRight ul li a svg:hover {
@@ -983,7 +978,6 @@ footer .copyrightFooter .waygroup::after {
   -webkit-box-shadow: 0px 0px 5px 0px #272523;
   box-shadow: 0px 0px 5px 0px #272523;
   -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
   transition: 0.3s;
 }
 #productenblok .widthContainer article a:hover, #productenblok .widthContainer article a:active {
@@ -1151,7 +1145,6 @@ footer .copyrightFooter .waygroup::after {
   font-weight: 800;
   cursor: pointer;
   -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
   transition: 0.5s;
   -webkit-box-shadow: 0px 0px 3px 0px #272523;
   box-shadow: 0px 0px 3px 0px #272523;
@@ -1259,7 +1252,6 @@ footer .copyrightFooter .waygroup::after {
 }
 .positie_rechts #detailpage_productbeschrijving {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#474442), to(#272523));
-  background-image: -o-linear-gradient(#474442, #272523);
   background-image: linear-gradient(#474442, #272523);
 }
 @media (min-width: 992px) {
@@ -1430,7 +1422,6 @@ footer .copyrightFooter .waygroup::after {
   margin-bottom: 0;
   display: inline;
   -webkit-transition: 0.1s;
-  -o-transition: 0.1s;
   transition: 0.1s;
 }
 .positie_rechts #detailpage_productbeschrijving .widthContainer article a:hover, .positie_rechts #detailpage_productbeschrijving .widthContainer article a:active {
@@ -1561,7 +1552,6 @@ footer .copyrightFooter .waygroup::after {
   height: 50px;
   cursor: pointer;
   -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
   transition: 0.3s;
   -webkit-box-shadow: 0px 0px 5px 0px #272523;
   box-shadow: 0px 0px 5px 0px #272523;
@@ -1649,7 +1639,6 @@ footer .copyrightFooter .waygroup::after {
   width: 90px;
   text-align: center;
   -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
   transition: 0.3s;
 }
 @media (min-width: 992px) {
@@ -1689,7 +1678,6 @@ footer .copyrightFooter .waygroup::after {
 .positie_rechts .naar_rechts .actie_kader:hover {
   border-radius: 45px 0 0 45px;
   -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
   transition: 0.3s;
 }
 .positie_rechts .naar_rechts .actie_kader {
@@ -1698,8 +1686,156 @@ footer .copyrightFooter .waygroup::after {
   background-color: #B6CA00;
   border-radius: 25px 0 0 25px;
   -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
   transition: 0.3s;
+}
+.positie_rechts .naar_rechts .actie_kader div {
+  width: 100%;
+}
+.positie_rechts .naar_rechts .actie_kader div form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.positie_rechts .naar_rechts .actie_kader div form p {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 0;
+}
+.positie_rechts .naar_rechts .actie_kader div form p label {
+  color: #bcbcbc;
+  font-weight: bold;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .positie_rechts .naar_rechts .actie_kader div form p label {
+    width: 50%;
+  }
+}
+.positie_rechts .naar_rechts .actie_kader div form p span input {
+  margin: 0.5rem 0 1rem 0;
+  padding: 0.5rem 0.5rem;
+  background-color: #bcbcbc;
+  color: #272523;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .positie_rechts .naar_rechts .actie_kader div form p span input {
+    width: 50%;
+  }
+}
+.positie_rechts .naar_rechts .actie_kader div form p span input:focus {
+  outline: none;
+  -webkit-box-shadow: 0px 0px 2px 0px #b6ca00;
+  box-shadow: 0px 0px 2px 0px #b6ca00;
+}
+.positie_rechts .naar_rechts .actie_kader div form p span textarea {
+  color: #272523;
+  margin: 0.5rem 0 2rem 0;
+  background-color: #bcbcbc;
+  padding: 0.5rem 0.5rem;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .positie_rechts .naar_rechts .actie_kader div form p span textarea {
+    width: 50%;
+  }
+}
+.positie_rechts .naar_rechts .actie_kader div form p span textarea:focus {
+  outline: none;
+  -webkit-box-shadow: 0px 0px 2px 0px #b6ca00;
+  box-shadow: 0px 0px 2px 0px #b6ca00;
+}
+.positie_rechts .naar_rechts .actie_kader div form p span select {
+  margin: 0.5rem 0 1rem 0;
+  padding: 0.5rem 0.5rem;
+  background-color: #bcbcbc;
+  color: #272523;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .positie_rechts .naar_rechts .actie_kader div form p span select {
+    width: 52%;
+  }
+}
+.positie_rechts .naar_rechts .actie_kader div form p span select:focus {
+  outline: none;
+  -webkit-box-shadow: 0px 0px 2px 0px #b6ca00;
+  box-shadow: 0px 0px 2px 0px #b6ca00;
+}
+.positie_rechts .naar_rechts .actie_kader div form p span ::-webkit-input-placeholder {
+  color: #474442;
+}
+.positie_rechts .naar_rechts .actie_kader div form p span ::-moz-placeholder {
+  color: #474442;
+}
+.positie_rechts .naar_rechts .actie_kader div form p span :-ms-input-placeholder {
+  color: #474442;
+}
+.positie_rechts .naar_rechts .actie_kader div form p span ::-ms-input-placeholder {
+  color: #474442;
+}
+.positie_rechts .naar_rechts .actie_kader div form p span ::placeholder {
+  color: #474442;
+}
+.positie_rechts .naar_rechts .actie_kader div form p span .wpcf7-not-valid-tip {
+  color: red;
+  margin-bottom: 2rem;
+}
+.positie_rechts .naar_rechts .actie_kader div form p:last-of-type {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.positie_rechts .naar_rechts .actie_kader div form p:last-of-type input {
+  color: #474442;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  border: 0;
+  border-radius: 10px 10px;
+  background-color: #B6CA00;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 0px 0px 5px 0px #272523;
+  box-shadow: 0px 0px 5px 0px #272523;
+}
+.positie_rechts .naar_rechts .actie_kader div form p:last-of-type input:hover, .positie_rechts .naar_rechts .actie_kader div form p:last-of-type input:focus, .positie_rechts .naar_rechts .actie_kader div form p:last-of-type input:active {
+  color: #272523;
+  -webkit-box-shadow: 0px 0px 6px 0px black;
+  box-shadow: 0px 0px 6px 0px black;
+  outline: none;
+}
+.positie_rechts .naar_rechts .actie_kader div form .formtext p {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+@media (min-width: 992px) {
+  .positie_rechts .naar_rechts .actie_kader div form .formtext p {
+    width: 52%;
+  }
+}
+.positie_rechts .naar_rechts .actie_kader div form .wpcf7-response-output {
+  color: red;
+  border-color: rgba(0, 0, 0, 0);
+  margin: 2rem 0 0 0;
+  padding: 0 0;
 }
 .positie_rechts .naar_rechts .actie_kader img {
   margin: 1rem 2rem 0 0;
@@ -1735,7 +1871,6 @@ footer .copyrightFooter .waygroup::after {
   width: 90px;
   text-align: center;
   -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
   transition: 0.3s;
 }
 @media (min-width: 992px) {
@@ -2044,7 +2179,6 @@ footer .copyrightFooter .waygroup::after {
 
 #contact_container {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#474442), to(#272523));
-  background-image: -o-linear-gradient(#474442, #272523);
   background-image: linear-gradient(#474442, #272523);
   margin-bottom: 0;
   border-radius: 0;
@@ -2225,7 +2359,6 @@ footer .copyrightFooter .waygroup::after {
   height: 50px;
   cursor: pointer;
   -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
   transition: 0.3s;
   -webkit-box-shadow: 0px 0px 5px 0px #272523;
   box-shadow: 0px 0px 5px 0px #272523;
@@ -2250,4 +2383,50 @@ footer .copyrightFooter .waygroup::after {
   border-color: rgba(0, 0, 0, 0);
   margin: 2rem 0 0 0;
   padding: 0 0;
+}
+
+.productenContainer1 {
+  padding-bottom: 2rem;
+}
+.productenContainer1 h2 {
+  padding-top: 3rem;
+}
+.productenContainer1 .widthContainer .successtoryBlok .storyPersonBlok {
+  margin-bottom: 2rem;
+}
+.productenContainer1 .widthContainer .successtoryBlok .afkappen {
+  margin-bottom: 2rem;
+}
+
+.vacatureClass #customMenuTitel {
+  font-family: "Open Sans", sans-serif;
+  color: #B6CA00;
+  font-weight: 400;
+  line-height: 1.75rem;
+  margin-bottom: 1rem;
+}
+.vacatureClass p {
+  font-family: "Open Sans", sans-serif;
+  color: #dddddd;
+  line-height: 1.25rem;
+  margin-bottom: 2rem;
+}
+.vacatureClass a {
+  -webkit-box-shadow: 0px 0px 5px 0px #272523;
+  box-shadow: 0px 0px 5px 0px #272523;
+  color: #474442;
+  background-color: #dddddd;
+  font-weight: bold;
+  border-radius: 10px 10px;
+  padding: 1rem 3rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.vacatureClass a:hover, .vacatureClass a:active {
+  color: #272523;
+  background-color: #bcbcbc;
 }
